@@ -1166,7 +1166,25 @@ header {
   width: 120px;
   position: absolute;
   left: -150px;
+  -webkit-animation: roll 1.8s ease-out forwards;
   animation: roll 1.8s ease-out forwards;
+}
+
+@-webkit-keyframes roll {
+  0% {
+    -webkit-left: -150px;
+    -webkit-transform: rotate(0deg);
+  }
+
+  70% {
+    -webkit-left: 50%;
+    -webkit-transform: rotate(720deg);
+  }
+
+  100% {
+    -webkit-left: 50%;
+    -webkit-transform: translateX(-50%) rotate(720deg);
+  }
 }
 
 @keyframes roll {
