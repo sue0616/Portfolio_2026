@@ -322,7 +322,7 @@ header {
   flex-direction: column;
 
   .hero_container {
-    margin-top: -64px;
+    margin-top: -160px;
 
     h1 {
       position: relative;
